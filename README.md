@@ -11,3 +11,9 @@ If regression is included, evaluate it on held-out data and report appropriate m
 ## Interpretation and Limitations
 
 Salary patterns in a dataset are descriptive, not guarantees of an individual's compensation. Results can reflect sampling, geography, job-title definitions, seniority, and other factors that may not be represented in the data.
+
+## Project Development Notes
+
+Document dataset provenance, currency and salary units, missing-value treatment, and grouping definitions. Compare compensation distributions by role and experience without implying causation.
+
+For reproducible updates, record the dataset/source version, environment and dependency versions, preprocessing choices, and actual outputs from each run. Keep sample values clearly labelled and do not publish secrets or private data.
