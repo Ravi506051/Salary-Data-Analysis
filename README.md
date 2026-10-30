@@ -17,3 +17,9 @@ Salary patterns in a dataset are descriptive, not guarantees of an individual's 
 Document dataset provenance, currency and salary units, missing-value treatment, and grouping definitions. Compare compensation distributions by role and experience without implying causation.
 
 For reproducible updates, record the dataset/source version, environment and dependency versions, preprocessing choices, and actual outputs from each run. Keep sample values clearly labelled and do not publish secrets or private data.
+
+### Technical Deep Dive
+
+A reliable salary-analysis workflow should normalize currency and pay periods before comparing records, standardize job-title categories, and profile missingness by column. Use median and percentile summaries alongside means because salary distributions are commonly skewed. Separate descriptive analysis from any predictive model so correlation is not presented as causation.
+
+Suggested engineering checks: document dataset provenance and date, validate units, inspect outliers before filtering, and make every chart title state the population and aggregation used.
