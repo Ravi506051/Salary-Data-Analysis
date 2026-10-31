@@ -31,3 +31,11 @@ Suggested engineering checks: document dataset provenance and date, validate uni
 - Use medians and percentiles in addition to means because compensation distributions can be strongly skewed.
 - Inspect missing values and outliers before filtering; explain every exclusion and avoid treating correlation as causation.
 - If predictive modelling is included, use a held-out evaluation set and report actual MAE, RMSE, and R-squared values only after running the analysis.
+
+## Advanced Analysis Checklist
+
+- Standardize job titles, experience bands, location labels, salary currency, and pay frequency before comparisons.
+- Use median, interquartile range, and percentile summaries to describe skewed compensation distributions.
+- Compare groups only when sample sizes are adequate, and show counts alongside summary statistics.
+- Use clear chart labels that state the population, unit, and aggregation method.
+- Treat observed associations as descriptive; do not infer that a particular factor causes salary differences.
