@@ -23,3 +23,11 @@ For reproducible updates, record the dataset/source version, environment and dep
 A reliable salary-analysis workflow should normalize currency and pay periods before comparing records, standardize job-title categories, and profile missingness by column. Use median and percentile summaries alongside means because salary distributions are commonly skewed. Separate descriptive analysis from any predictive model so correlation is not presented as causation.
 
 Suggested engineering checks: document dataset provenance and date, validate units, inspect outliers before filtering, and make every chart title state the population and aggregation used.
+
+## Analytical Quality and Reproducibility
+
+- Document the dataset source, collection date, currency, pay period, geography, and definitions of job title and experience.
+- Normalize salary units before comparison (for example, annual versus monthly compensation) and make any currency conversion assumptions explicit.
+- Use medians and percentiles in addition to means because compensation distributions can be strongly skewed.
+- Inspect missing values and outliers before filtering; explain every exclusion and avoid treating correlation as causation.
+- If predictive modelling is included, use a held-out evaluation set and report actual MAE, RMSE, and R-squared values only after running the analysis.
