@@ -39,3 +39,10 @@ Suggested engineering checks: document dataset provenance and date, validate uni
 - Compare groups only when sample sizes are adequate, and show counts alongside summary statistics.
 - Use clear chart labels that state the population, unit, and aggregation method.
 - Treat observed associations as descriptive; do not infer that a particular factor causes salary differences.
+
+## Additional Analysis Plan
+
+- Normalize currency and pay frequency before comparing compensation records.
+- Use median, interquartile range, and percentiles alongside averages to describe skewed salary distributions.
+- Show group sample counts and document filters, missing-value treatment, geography, and collection date.
+- Treat observed relationships as descriptive; do not infer causation or add unmeasured model scores.
