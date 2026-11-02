@@ -1,48 +1,36 @@
-# Salary-Data-Analysis
+# Salary Data Analysis
 
-## Analysis Notes
+An exploratory data analysis project focused on understanding salary patterns across roles, experience levels and other available dataset attributes.
 
-This repository is intended for exploratory analysis of salary data. A useful analysis should document the dataset source, the meaning and units of each column, missing-value handling, and any filtering applied before drawing conclusions.
+## Analysis workflow
+- Inspect dataset structure, data types and missing values.
+- Clean inconsistent labels and validate salary units.
+- Explore distributions and outliers.
+- Compare compensation using charts and descriptive statistics.
+- Document findings and limitations.
 
-## Model Evaluation
+## Technology
+Python · Pandas · NumPy · Matplotlib · Seaborn · Jupyter Notebook
 
-If regression is included, evaluate it on held-out data and report appropriate metrics such as MAE, RMSE, and R-squared. Compare predicted and observed values and inspect residuals rather than relying on a single score. Do not add performance figures unless they come from a reproducible run.
+## Getting started
+```bash
+git clone https://github.com/Ravi506051/Salary-Data-Analysis.git
+cd Salary-Data-Analysis
+python -m venv .venv
+# Windows: .venv\\Scripts\\activate
+pip install pandas numpy matplotlib seaborn jupyter
+jupyter notebook
+```
 
-## Interpretation and Limitations
+## Analytical standards
+Document the dataset source, collection date, currency, pay period and geography. Use medians and percentiles alongside averages because salary distributions can be skewed. Explain missing-value treatment and exclusions, and do not interpret correlation as causation.
 
-Salary patterns in a dataset are descriptive, not guarantees of an individual's compensation. Results can reflect sampling, geography, job-title definitions, seniority, and other factors that may not be represented in the data.
+If predictive modelling is included, evaluate it on held-out data and report only measured MAE, RMSE or R-squared values.
 
-## Project Development Notes
+## Further improvements
+- Add a reproducible notebook and dataset dictionary.
+- Compare salary distributions by role and experience with sample counts.
+- Add clear chart titles, units and filters.
 
-Document dataset provenance, currency and salary units, missing-value treatment, and grouping definitions. Compare compensation distributions by role and experience without implying causation.
-
-For reproducible updates, record the dataset/source version, environment and dependency versions, preprocessing choices, and actual outputs from each run. Keep sample values clearly labelled and do not publish secrets or private data.
-
-### Technical Deep Dive
-
-A reliable salary-analysis workflow should normalize currency and pay periods before comparing records, standardize job-title categories, and profile missingness by column. Use median and percentile summaries alongside means because salary distributions are commonly skewed. Separate descriptive analysis from any predictive model so correlation is not presented as causation.
-
-Suggested engineering checks: document dataset provenance and date, validate units, inspect outliers before filtering, and make every chart title state the population and aggregation used.
-
-## Analytical Quality and Reproducibility
-
-- Document the dataset source, collection date, currency, pay period, geography, and definitions of job title and experience.
-- Normalize salary units before comparison (for example, annual versus monthly compensation) and make any currency conversion assumptions explicit.
-- Use medians and percentiles in addition to means because compensation distributions can be strongly skewed.
-- Inspect missing values and outliers before filtering; explain every exclusion and avoid treating correlation as causation.
-- If predictive modelling is included, use a held-out evaluation set and report actual MAE, RMSE, and R-squared values only after running the analysis.
-
-## Advanced Analysis Checklist
-
-- Standardize job titles, experience bands, location labels, salary currency, and pay frequency before comparisons.
-- Use median, interquartile range, and percentile summaries to describe skewed compensation distributions.
-- Compare groups only when sample sizes are adequate, and show counts alongside summary statistics.
-- Use clear chart labels that state the population, unit, and aggregation method.
-- Treat observed associations as descriptive; do not infer that a particular factor causes salary differences.
-
-## Additional Analysis Plan
-
-- Normalize currency and pay frequency before comparing compensation records.
-- Use median, interquartile range, and percentiles alongside averages to describe skewed salary distributions.
-- Show group sample counts and document filters, missing-value treatment, geography, and collection date.
-- Treat observed relationships as descriptive; do not infer causation or add unmeasured model scores.
+## Maintainer
+**Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
