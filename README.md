@@ -34,3 +34,15 @@ If predictive modelling is included, evaluate it on held-out data and report onl
 
 ## Maintainer
 **Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
+
+## Skills Demonstrated
+
+- Exploratory data analysis
+- data cleaning
+- salary distribution analysis
+- descriptive statistics
+- data visualization.
+
+## Portfolio Context
+
+This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
